@@ -2,15 +2,15 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="Hangfire" 
             Version="1.0.0" 
-            Publisher="" />
+            Publisher="CN=Zitoune Inc." />
   <Properties>
-    <DisplayName></DisplayName>
-    <PublisherDisplayName></PublisherDisplayName>
+    <DisplayName>Hangfire</DisplayName>
+    <PublisherDisplayName>Zitoune Inc.</PublisherDisplayName>
     <Logo></Logo>
   </Properties>
   <Prerequisites>
-    <OSMinVersion></OSMinVersion>
-    <OSMaxVersionTested></OSMaxVersionTested>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
   <Resources>
     <Resource Language="" />
