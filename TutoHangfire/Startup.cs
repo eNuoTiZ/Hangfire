@@ -10,6 +10,8 @@ using Hangfire;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using Hangfire.Dashboard;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 
 namespace TutoHangfire
 {
@@ -18,6 +20,7 @@ namespace TutoHangfire
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            AppCenter.Start("4c191ce0-185a-4a4e-b06a-40dc48759e39", typeof(Analytics));
         }
 
         public IConfiguration Configuration { get; }
