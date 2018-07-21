@@ -31,11 +31,11 @@ steps:
   - task: DotNetCoreCLI@2
     inputs:
       command: 'publish'
-      arguments: '--configuration $(buildConfiguration) --output $(build.artifactStagingDirectory)'
+      arguments: '--configuration $(buildConfiguration) --output $(Build.Repository.LocalPath)'
 
   - task: PublishBuildArtifacts@1
     inputs:
-        pathtoPublish: '$(build.artifactStagingDirectory)'
+        pathtoPublish: '$(Build.Repository.LocalPath)'
 
 #  - task: AzureRmWebAppDeployment@3
 #    inputs:
